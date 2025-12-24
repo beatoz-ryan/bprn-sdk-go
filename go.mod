@@ -1,4 +1,4 @@
-module bprn-sdk-go
+module github.com/beatoz-ryan/bprn-sdk-go
 
 go 1.23.0
 
