@@ -1,10 +1,10 @@
 package generator
 
 import (
-	"bprn-sdk-go/types"
 	"encoding/hex"
 	"fmt"
 
+	"github.com/beatoz-ryan/bprn-sdk-go/types"
 	"github.com/beatoz/beatoz-go/types/crypto"
 )
 

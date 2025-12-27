@@ -1,11 +1,11 @@
 package fabric
 
 import (
-	"bprn-sdk-go/types"
 	"encoding/json"
 	"fmt"
 	"reflect"
 
+	"github.com/beatoz-ryan/bprn-sdk-go/types"
 	"github.com/holiman/uint256"
 	"github.com/hyperledger/fabric-contract-api-go/v2/contractapi"
 	"github.com/hyperledger/fabric-protos-go-apiv2/peer"

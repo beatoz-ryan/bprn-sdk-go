@@ -1,7 +1,7 @@
 package generator
 
 import (
-	"bprn-sdk-go/types"
+	"github.com/beatoz-ryan/bprn-sdk-go/types"
 )
 
 type ERC20ArgsGenerator struct {

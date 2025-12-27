@@ -1,12 +1,12 @@
 package fabric
 
 import (
-	"bprn-sdk-go/generator"
-	"bprn-sdk-go/types"
-	"bprn-sdk-go/utils"
 	"encoding/hex"
 	"fmt"
 
+	"github.com/beatoz-ryan/bprn-sdk-go/generator"
+	"github.com/beatoz-ryan/bprn-sdk-go/types"
+	"github.com/beatoz-ryan/bprn-sdk-go/utils"
 	"github.com/golang/protobuf/proto"
 	"github.com/holiman/uint256"
 	"github.com/hyperledger/fabric-chaincode-go/v2/shim"
