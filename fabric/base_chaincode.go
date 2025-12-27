@@ -38,14 +38,14 @@ func (bc *BaseChaincode) ChannelName(ctx contractapi.TransactionContextInterface
 	return ctx.GetStub().GetChannelID()
 }
 
-func (bc *BaseChaincode) ChaincodeAddress(ctx contractapi.TransactionContextInterface) (string, error) {
+func (bc *BaseChaincode) ChaincodeAddress(ctx contractapi.TransactionContextInterface) (*types.Address, error) {
 	ledger := NewBaseChaincodeLedger(ctx)
 	selfChaincodeName, err := ledger.GetSelfChaincodeName()
 	if err != nil {
-		return "", err
+		return nil, err
 	}
 
-	return GenerateChaincodeAddress(ctx.GetStub().GetChannelID(), selfChaincodeName), nil
+	return types.NewChaincodeAddress(ctx.GetStub().GetChannelID(), selfChaincodeName)
 }
 
 func (bc *BaseChaincode) ChaincodeNameFromLedger(ctx contractapi.TransactionContextInterface) (string, error) {
